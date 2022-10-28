@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Image({image}) {
+function Image(props) {
   return (
     <div>
-        <img src={image.webformatURL}/>
-        {console.log(image.webformatURL)}
+        <img key={props.keyforimg} src={props.images}/>
+        {console.log(props.images.webformatURL)}
     </div>
   )
 }
